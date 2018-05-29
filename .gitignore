@@ -1,0 +1,5 @@
+*.pub
+*.pem
+*rclone.sh
+rclone.sh
+private/
