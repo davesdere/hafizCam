@@ -1,0 +1,56 @@
+Vim iS SuppoSe to be great
+Source: https://www.linux.com/learn/vim-101-beginners-guide-vim
+
+##################################################
+# Enter this in terminal to create a config file
+# vim ~/.vimrc
+# This is what's in the config file
+###################
+syntax enable
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+filetype indent on
+set autoindent
+##################################################
+# To push the customization refer to this.
+# https://realpython.com/vim-and-python-a-match-made-in-heaven/#nix
+
+ZZ = SAVE & QUIT the file
+:w filename = SAVE TO NEW NAME
+:w! filename = OVERWRITE file
+:wq = Save and QUIT
+
+x = delete 1 char
+dw = delete 1 word
+dd = delete 1 line
+
+p = Paste temp buffer BEFORE current pos
+P = Paste temp buffer AFTER  current pos (CAPS)
+
+v = Highlight per char
+V = Highlight per line (CAPS)
+CTRL + V = SELECT COLUMNS (CAPS)
+CTRL + v = SELECT char
+
+0 = Move to the BEG of a line (ZERO)
+$ = Move to the END of a line
+
+gg = Move to the BEG of a file
+G =  Move to the END of a file
+
+:w = WRITE a file
+:q = QUIT
+
+u = UNDO
+CTRL + r = REDO
+
+/text =  search for text in the document, going forward.
+n = Move the cursor to the next instance of the text from the last search. This will wrap to the beginning of the document.
+
+N = Move the cursor to the previous instance of the text from the last search.
+? = text search for text in the document, going backwards.
+
+:%s/text/replacement text/g = search through the entire document for text and replace it with replacement text.
+:%s/text/replacement text/gc = search through the entire document and confirm before replacing text.
